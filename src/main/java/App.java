@@ -10,10 +10,7 @@ public class App {
     public static void main(String[] args) throws IOException {
 
         System.out.println( "Hello World!" );
-        String connectStr = "DefaultEndpointsProtocol=https;" +
-                            "AccountName=quick;" +
-                            "AccountKey=yGnAKgqP9LGS5gP13FpdjzBhAWk93VqcPmyEIQlCmCW57VRCMby2b1ulFWogQC2WAVffzZwpx2s/NakQbg0kKA==;" +
-                            "EndpointSuffix=core.windows.net";
+        String connectStr = "example-connect-str";
 
         // Bir container client oluşturmak için kullanılacak bir BlobServiceClient nesnesi oluşturulur
         BlobServiceClient blobServiceClient = new BlobServiceClientBuilder().connectionString(connectStr).buildClient();
